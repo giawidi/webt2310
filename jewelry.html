@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Odd Duck Fashions — Shop: Tooth & Metal Collection</title>
+  <meta name="description" content="Shop Odd Duck Fashions' human-tooth jewelry: earrings, rings, and necklaces that turn the bizarre into the beautiful." />
+  <style>
+    :root{
+      --bg:#0f0f12; --card:#16161b; --ink:#e7e7ea; --muted:#b9b9c3; --accent:#ffd166;
+      --ring:#23232a; --border:#23232a; --radius:18px; --shadow:0 12px 32px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box }
+    html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:1200px;margin:auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
+    .brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
+    .logo{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#fff 0%,var(--accent) 100%);display:inline-grid;place-items:center;color:#111;font-weight:900;box-shadow:var(--shadow)}
+    .name{font-weight:800;letter-spacing:.3px}
+    .tag{font-size:1rem;color:var(--muted)}
+    .hero{background:
+        radial-gradient(1200px 400px at 10% -10%,rgba(255,209,102,.10),transparent),
+        radial-gradient(1200px 400px at 110% -10%,rgba(255,209,102,.06),transparent);
+      border-radius:var(--radius);padding:24px;border:1px solid var(--border);box-shadow:var(--shadow);margin:18px 0 26px
+    }
+    .hero h1{margin:0 0 6px;font-size:2rem;line-height:1.15}
+    .grid{display:grid;grid-template-columns:1fr;gap:20px}
+    @media (min-width:700px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (min-width:1000px){ .grid{grid-template-columns:repeat(3,1fr)} }
+    .card{background:var(--card);border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
+    .imgwrap{background:#1b1b21;aspect-ratio:1/1;display:grid;place-items:center;border-bottom:1px solid var(--border)}
+    .imgwrap img{width:100%;height:100%;object-fit:contain;padding:14px}
+    .meta{padding:16px 16px 6px}
+    .title{font-weight:750;font-size:1.05rem;margin:0 0 6px}
+    .price{color:var(--accent);font-weight:700;margin:4px 0 8px}
+    .desc{color:var(--ink);opacity:.92;margin:0 0 10px}
+    .tagline{color:var(--muted);font-style:italic;margin:0 0 14px}
+    .actions{display:flex;gap:10px;padding:0 16px 16px}
+    .btn{flex:1;display:inline-grid;place-items:center;background:#222229;border:1px solid #2b2b34;color:var(--ink);padding:10px 12px;border-radius:12px;cursor:pointer;transition:.18s}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:var(--accent);border-color:#f6c74d;color:#111;font-weight:800}
+    footer{margin-top:26px;color:var(--muted);font-size:.9rem;text-align:center}
+    /* small helper label on images */
+    .note{position:absolute;inset:auto 10px 10px auto;background:rgba(0,0,0,.45);color:#fff;font-size:.75rem;padding:4px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.15)}
+    .imgwrap{position:relative}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true">🦆</span>
+        <span class="name">Odd Duck Fashions</span>
+      </a>
+      <div class="tag">Tooth & Metal Collection</div>
+    </header>
+
+    <section class="hero" aria-labelledby="shop-title">
+      <h1 id="shop-title">Shop the “Tooth & Metal” Collection</h1>
+      <p>Human-tooth–inspired accessories handcrafted for the beautifully bizarre. <em>Pro tip:</em> hover titles make great captions; swap the image sources for your project paths.</p>
+    </section>
+
+    <section class="grid" aria-label="Product grid">
+      <!-- 1. Golden Grin Earrings -->
+      <article class="card" aria-labelledby="p1">
+        <div class="imgwrap">
+          <!-- Replace src values with your image paths -->
+          <img src="earrings1.jpg" alt="Golden Grin Earrings with tooth-shaped porcelain petals framed in gold." />
+          <span class="note">Earrings</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p1">“Golden Grin” Earrings</h2>
+          <div class="price">$—</div>
+          <p class="desc">Elegant, unsettling, and a little unhinged—porcelain-like tooth forms cradled in gold. Dark humor meets luxe craft.</p>
+          <p class="tagline">“When you flash a smile, make sure it’s gold-plated.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 2. Molars of Majesty Necklace -->
+      <article class="card" aria-labelledby="p2">
+        <div class="imgwrap">
+          <img src="nec1.jpg" alt="Molars of Majesty necklace with a halo of sculpted tooth forms." />
+          <span class="note">Necklace</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p2">“Molars of Majesty” Necklace</h2>
+          <div class="price">$—</div>
+          <p class="desc">Part relic, part rebellion—a cascade of sculpted teeth in wild organic rhythm. The macabre turned magnificent.</p>
+          <p class="tagline">“Wear your bite proudly.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 3. Crown of Decay Ring -->
+      <article class="card" aria-labelledby="p3">
+        <div class="imgwrap">
+          <img src="ring1.jpg" alt="Crown of Decay gold ring with a single tooth form and gemstone 'cavities'." />
+          <span class="note">Ring</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p3">“Crown of Decay” Ring</h2>
+          <div class="price">$—</div>
+          <p class="desc">Gothic glamour with a golden glow. A tooth silhouette set high with twinkling ‘cavities’—creepy couture.</p>
+          <p class="tagline">“Rot never looked so radiant.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 4. The Bite Back Ring -->
+      <article class="card" aria-labelledby="p4">
+        <div class="imgwrap">
+          <img src="ring2.jpg" alt="Silver band topped with four upright tooth forms, like a feral smile." />
+          <span class="note">Ring</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p4">“The Bite Back” Ring</h2>
+          <div class="price">$—</div>
+          <p class="desc">Primal and impossible to ignore—four teeth grip a polished band in a frozen snarl. Wearable defiance.</p>
+          <p class="tagline">“Because subtlety is overrated.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 5. Root Cause Ring -->
+      <article class="card" aria-labelledby="p5">
+        <div class="imgwrap">
+          <img src="ring3.jpg" alt="Minimal silver band with a single inset molar." />
+          <span class="note">Ring</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p5">“Root Cause” Ring</h2>
+          <div class="price">$—</div>
+          <p class="desc">Minimalist menace: one perfect molar framed by a smooth silver band. Quiet rebellion, loud conversation.</p>
+          <p class="tagline">“Because every smile has a story.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 6. Triple Threat Double Ring -->
+      <article class="card" aria-labelledby="p6">
+        <div class="imgwrap">
+          <img src="ring4.jpg" alt="Double ring spanning two fingers with three tooth settings." />
+          <span class="note">Double Ring</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p6">“Triple Threat” Double Ring</h2>
+          <div class="price">$—</div>
+          <p class="desc">Three perfectly imperfect teeth across two fingers. Elegance, edge, and instant conversation starter.</p>
+          <p class="tagline">“Twice the fingers, triple the attitude.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 7. Crossbite Ring -->
+      <article class="card" aria-labelledby="p7">
+        <div class="imgwrap">
+          <img src="ring5.jpg" alt="Crossed tooth forms mounted on a sculptural silver band." />
+          <span class="note">Ring</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p7">“Crossbite” Ring</h2>
+          <div class="price">$—</div>
+          <p class="desc">Two intersecting teeth form a miniature sculpture—organic meets industrial, science meets style.</p>
+          <p class="tagline">“Sharp style. Real roots.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 8. Cusp Couture Ring -->
+      <article class="card" aria-labelledby="p8">
+        <div class="imgwrap">
+          <img src="ring6.jpg" alt="Bold signet-style silver ring with a single raised molar." />
+          <span class="note">Ring</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p8">“Cusp Couture” Ring</h2>
+          <div class="price">$—</div>
+          <p class="desc">A sleek signet silhouette with a dental twist—everyday refinement turned deliciously disturbing.</p>
+          <p class="tagline">“Luxury with a bite.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+
+      <!-- 9. Tri-Crown Ring -->
+      <article class="card" aria-labelledby="p9">
+        <div class="imgwrap">
+          <img src="ring7.jpg" alt="Silver band topped with three upright tooth crowns." />
+          <span class="note">Ring</span>
+        </div>
+        <div class="meta">
+          <h2 class="title" id="p9">“Tri-Crown” Ring</h2>
+          <div class="price">$—</div>
+          <p class="desc">Three teeth, one throne. Silver craft meets anatomy-inspired design for a royally rogue statement.</p>
+          <p class="tagline">“Because one crown isn’t enough.”</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary">Add to Cart</button>
+          <button class="btn">Details</button>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      © Odd Duck Fashions — fictitious brand for a school project. Replace image <code>src</code> paths (e.g., <code>earrings1.jpg</code>, <code>ring1.jpg</code>) with your actual file locations.
+    </footer>
+  </div>
+</body>
+</html>
