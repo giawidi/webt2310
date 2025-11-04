@@ -1,7 +1,7 @@
 /* Global Styles */
 
 body {
-    background-color: #ccafaf;
+    background-color: #000000;
 }
 
 
@@ -15,7 +15,7 @@ img {
 #container {
     width: 100%;
     margin: auto;
-    background-color: #000000;
+    background-color: #b99d9d;
     padding: 5px;
     color: #ffffff;
 }
